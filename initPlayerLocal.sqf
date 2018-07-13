@@ -1,34 +1,3 @@
-/*
-	author: Net_2
-	description: none
-	returns: nothing
-*/
-
-// COMPILE FUNCTIONS FOR LATER USE
-
-/*
-
-_commonFunctions =
-[
-];
-
-_clientFunctions =
-[
-];
-
-
-    // Compile common functions
-{
-    call compileFinal preprocessFileLineNumbers _x;
-} forEach _commonFunctions;
-
-    // Compile client functions
-{
-    call compileFinal preprocessFileLineNumbers _x;
-} forEach _clientFunctions;
-
-*/
-
 // RUN SCRIPTS
 
 _arrScriptsClient = [

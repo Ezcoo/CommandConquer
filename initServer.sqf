@@ -1,33 +1,3 @@
-/*
-	author: Net_2
-	description: none
-	returns: nothing
-*/
-
-// COMPILE FUNCTIONS FOR LATER USE
-
-/*
-
-_commonFunctions =
-[
-];
-
-_serverFunctions =
-[
-];
-
-    // Compile common functions
-{
-    call compileFinal preprocessFileLineNumbers _x;
-} forEach _commonFunctions;
-
-
-    // Compile server functions
-{
-    call compileFinal preprocessFileLineNumbers _x;
-} forEach _serverFunctions;
-
-*/
 
 // RUN SCRIPTS
 
