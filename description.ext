@@ -1,0 +1,15 @@
+#include functions.hpp
+
+enableDebugConsole=2;
+
+author="Ezcoo";
+onLoadName="Command & Conquer v0.1";
+onLoadMission="Mission powered by Leaf Engine by Ezcoo";
+
+class Header {
+
+    gametype=CTI;
+    minPlayers=1;
+    maxPlayers=60;
+
+};
