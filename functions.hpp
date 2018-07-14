@@ -6,6 +6,7 @@ class CfgFunctions
 		{
 			class updateMhqPosOnMap {};
 			class updateCommPosOnMap {};
+			class createCommVoteDialog {};
 		};
 	};
 };

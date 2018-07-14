@@ -6,8 +6,4 @@
 
 sleep 10;
 
-_dialogOpenedSuccessfully = createDialog "CommVoteTest";
-
-if !(_dialogOpenedSuccessfully) then {
-    hint "Wituix män!";
-}
+call CNC_fnc_createCommVoteDialog;

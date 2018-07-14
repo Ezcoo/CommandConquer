@@ -6,7 +6,7 @@ _arrScriptsServer = [
 
 // NOTE: common (shared) scripts are stored in global variable, because also initPlayerLocal.sqf executes the contents of the same list
 
-CNC_arrScriptsCommon = [
+_arrScriptsCommon = [
 ];
 
 if (isServer) then {
