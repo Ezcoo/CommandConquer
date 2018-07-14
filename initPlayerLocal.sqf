@@ -2,7 +2,8 @@
 
 _arrScriptsClient = [
 "scripts\client\updateMhqPosOnMapNew.sqf",
-"scripts\client\updateCommPosOnMap.sqf"
+"scripts\client\updateCommPosOnMap.sqf",
+"scripts\client\createCommVoteDialog.sqf"
 ];
 
 // Derived from initServer.sqf
