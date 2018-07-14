@@ -1,10 +1,10 @@
-#include functions.hpp
+#include "functions.hpp"
 
 enableDebugConsole=2;
 
 author="Ezcoo";
 onLoadName="Command & Conquer v0.1";
-onLoadMission="Mission powered by Leaf Engine by Ezcoo";
+onLoadMission="Old school Capture The Island modernized by Ezcoo";
 
 class Header {
 

@@ -1,5 +1,4 @@
-updateMhqPosOnMap = {
-    params ["_currentMhq"];
+    params ["_currentMhq", "_currentComm"];
 
     deleteMarkerLocal "mhqCurrentPos";
 
@@ -8,13 +7,21 @@ updateMhqPosOnMap = {
     _mhqPos = getPos _currentMhq;
     _mhqCurrentPosMarker = createMarkerLocal ["mhqCurrentPos", _mhqPos];
     _mhqCurrentPosMarker setMarkerShapeLocal "ICON";
-    _mhqCurrentPosMarker setMarkerTypeLocal "DOT";
+    _mhqCurrentPosMarker setMarkerTypeLocal "b_hq";
 
     if (speed _currentMhq > 2) then {
         _mhqCurrentPosMarker setMarkerColorLocal "ColorBlack";
-        _mhqCurrentPosMarker setMarkerTextLocal "MHQ - Moving";
-    };
+        if (vehicle _currentComm == _currentMhq) then {
+            _mhqCurrentPosMarker setMarkerTextLocal format ["MHQ - Moving - %1", name player];
+        } else {
+            _mhqCurrentPosMarker setMarkerTextLocal format ["MHQ - Moving"];
+        };
+    } else {
+        _mhqCurrentPosMarker setMarkerColorLocal "ColorYellow";
 
-    _mhqCurrentPosMarker setMarkerColorLocal "ColorYellow";
-    _mhqCurrentPosMarker setMarkerTextLocal "MHQ";
-};
+        if (vehicle _currentComm == _currentMhq) then {
+            _mhqCurrentPosMarker setMarkerTextLocal format["MHQ - %1", name player];
+        } else {
+            _mhqCurrentPosMarker setMarkerTextLocal format ["MHQ"];
+        };
+    };

@@ -1,11 +1,13 @@
 // RUN SCRIPTS
 
 _arrScriptsClient = [
-"scripts\client\updateMhqPosOnMap.sqf"
+"scripts\client\updateMhqPosOnMapNew.sqf",
+"scripts\client\updateCommPosOnMap.sqf"
 ];
 
 // Derived from initServer.sqf
-_arrScriptsCommon = CNC_arrScriptsCommon;
+_arrScriptsCommon = [
+];
 
 {
     _handle = [] execVM _x;

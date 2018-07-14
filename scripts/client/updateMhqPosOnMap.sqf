@@ -8,9 +8,9 @@ currentMhq = objNull;
 CNC_mhqEhId = addMissionEventHandler ["EachFrame", {
     _currentVehicle = vehicle player;
 
-    if (!(vehicle player == player) && (vehicle player isKindOf "LandVehicle")) then {
+    if ((vehicle player != player) && (vehicle player isKindOf "LandVehicle")) then {
         currentMhq = _currentVehicle;
     };
 
-    [missionNamespace, "mhqMarkerUpdate", currentMhq] call BIS_fnc_callScriptedEventHandler;
+    [missionNamespace, "mhqMarkerUpdate", [currentMhq]] call BIS_fnc_callScriptedEventHandler;
 }];

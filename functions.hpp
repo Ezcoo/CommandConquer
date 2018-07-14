@@ -5,6 +5,7 @@ class CfgFunctions
 		class Client
 		{
 			class updateMhqPosOnMap {};
+			class updateCommPosOnMap {};
 		};
 	};
 };
