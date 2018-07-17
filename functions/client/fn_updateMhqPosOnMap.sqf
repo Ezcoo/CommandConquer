@@ -9,6 +9,12 @@
     _mhqCurrentPosMarker setMarkerShapeLocal "ICON";
     _mhqCurrentPosMarker setMarkerTypeLocal "b_hq";
 
+    if (getDammage _currentMhq == 1) then {
+        _mhqCurrentPosMarker setMarkerColorLocal "ColorRed";
+        _mhqCurrentPosMarker setMarkerTextLocal format ["MHQ - DESTROYED"];
+        if (true) exitWith {};
+    };
+
     if (speed _currentMhq > 2) then {
         _mhqCurrentPosMarker setMarkerColorLocal "ColorBlack";
         if (vehicle _currentComm == _currentMhq) then {

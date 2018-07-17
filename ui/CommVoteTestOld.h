@@ -40,7 +40,7 @@ class CommVoteTest
 			text = "Vote commander";
 			colorBackground[] = {0.102,0.302,0.102,1};
 			colorText[] = {0.502,0.702,0.502,1};
-			font = "PuristaBold";
+			font = "TahomaB";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			tooltipColorBox[] = {0.502,0.502,0.502,1};
 			
@@ -52,13 +52,13 @@ class CommVoteTest
 			x = safeZoneX + safeZoneW * 0.3671875;
 			y = safeZoneY + safeZoneH * 0.29861112;
 			w = safeZoneW * 0.265625;
-			h = safeZoneH * 0.427013889;
+			h = safeZoneH * 0.42013889;
 			style = 16;
 			colorBackground[] = {0.4,0.4,0,1};
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelect[] = {0.902,0.902,0.8,1};
 			colorText[] = {0.702,0.702,0.302,1};
-			font = "PuristaMedium";
+			font = "TahomaB";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
@@ -93,7 +93,7 @@ class CommVoteTest
 			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
+			font = "TahomaB";
 			offsetPressedX = 0.01;
 			offsetPressedY = 0.01;
 			offsetX = 0.01;
@@ -124,7 +124,7 @@ class CommVoteTest
 			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
+			font = "TahomaB";
 			offsetPressedX = 0.01;
 			offsetPressedY = 0.01;
 			offsetX = 0.01;
