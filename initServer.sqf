@@ -1,6 +1,8 @@
 // COMPILE FUNCTIONS FOR LATER USE (OPTIMIZATION)
 
 _arrFunctionsServer = [
+"functions\server\CNC_initCommVote.sqf",
+"functions\server\CNC_registerCommVote.sqf"
 ];
 
 // NOTE: Content of _arrFunctionsCommon should be the same for client and server
