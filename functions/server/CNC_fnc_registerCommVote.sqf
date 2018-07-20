@@ -4,12 +4,12 @@ CNC_FNC_RegisterCommVote = {
 params ["_oldClientVoteIndex, _clientVoteIndex"];
 
 
-_numberofVotesNewTarget = commVotePlayerList select _clientVoteIndex select 2;
-commVotePlayerList set [_clientVoteIndex, _numberofVotesNewTarget + 1];
+_numberofVotesNewTarget = CNC_arr_commVotePlayerList select _clientVoteIndex select 2;
+CNC_arr_commVotePlayerList set [_clientVoteIndex, _numberofVotesNewTarget + 1];
 
-_numberOfVotesOldTarget = commVotePlayerList select _oldClientVoteIndex select 2;
-commVotePlayerList set [_oldClientVoteIndex, _numberOfVotesOldTarget - 1];
+_numberOfVotesOldTarget = CNC_arr_commVotePlayerList select _oldClientVoteIndex select 2;
+CNC_arr_commVotePlayerList set [_oldClientVoteIndex, _numberOfVotesOldTarget - 1];
 
-publicVariable "commVotePlayerList";
+publicVariable "CNC_arr_commVotePlayerList";
 
 };

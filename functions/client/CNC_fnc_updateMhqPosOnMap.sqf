@@ -1,3 +1,5 @@
+CNC_FNC_UpdateMhqPosOnMap = {
+
     params ["_currentMhq", "_currentComm"];
 
     deleteMarkerLocal "mhqCurrentPos";
@@ -31,3 +33,5 @@
             _mhqCurrentPosMarker setMarkerTextLocal format ["MHQ"];
         };
     };
+
+};

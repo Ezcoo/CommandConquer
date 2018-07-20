@@ -1,13 +1,13 @@
 _arrFunctionsClient = [
+"functions\client\init\initPVEH.sqf",
 "functions\client\CNC_fnc_createCommVoteDialog.sqf",
 "functions\client\CNC_fnc_updateCommPosOnMap.sqf",
-"functions\client\CNC_fnc_updateMhqPosOnMap.sqf"
+"functions\client\CNC_fnc_updateMhqPosOnMap.sqf",
+"functions\client\CNC_fnc_voteAsComm.sqf"
 ];
 
 // NOTE: Content of _arrFunctionsCommon should be the same for client and server
 _arrFunctionsCommon = [
-"cfg\common\CNC_cfg_locations.sqf",
-"cfg\common\CNC_cfg_commonVars.sqf",
 "functions\common\CNC_fnc_logContent.sqf"
 ];
 
@@ -35,14 +35,16 @@ if (!hasInterface) then {
 // RUN SCRIPTS
 
 _arrScriptsClient = [
-"scripts\client\CNC_updateMhqPosOnMapNew.sqf",
+"cfg\client\CNC_cfg_clientVars.sqf",
+"scripts\client\CNC_updateMhqPosOnMap.sqf",
 "scripts\client\CNC_updateCommPosOnMap.sqf",
 "scripts\client\ui\CNC_createCommVoteDialog.sqf",
 "scripts\client\init\CNC_initLocations.sqf"
 ];
 
 _arrScriptsCommon = [
-"cfg\common\CNC_cfg_commonVars.sqf"
+"cfg\common\CNC_cfg_commonVars.sqf",
+"cfg\common\CNC_cfg_locations.sqf"
 ];
 
 {

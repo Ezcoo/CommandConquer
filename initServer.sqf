@@ -7,8 +7,6 @@ _arrFunctionsServer = [
 
 // NOTE: Content of _arrFunctionsCommon should be the same for client and server
 _arrFunctionsCommon = [
-"cfg\common\CNC_cfg_locations.sqf",
-"cfg\common\CNC_cfg_commonVars.sqf",
 "functions\common\CNC_fnc_logContent.sqf"
 ];
 
@@ -28,6 +26,8 @@ _arrScriptsServer = [
 ];
 
 _arrScriptsCommon = [
+"cfg\common\CNC_cfg_commonVars.sqf",
+"cfg\common\CNC_cfg_locations.sqf"
 ];
 
 {

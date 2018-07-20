@@ -8,7 +8,7 @@ sleep 10;
 
 call CNC_fnc_createCommVoteDialog;
 
-CNC_arr_commanderCandidates = [];
+
 
 /*
 _handle = [] spawn {

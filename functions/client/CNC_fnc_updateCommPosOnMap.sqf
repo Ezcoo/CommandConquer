@@ -1,3 +1,5 @@
+CNC_FNC_UpdateCommPosOnMap = {
+
     params ["_currentComm"];
 
     deleteMarkerLocal "commCurrentPos";
@@ -13,3 +15,5 @@
         _commCurrentPosMarker setMarkerColorLocal "ColorKhaki";
         _commCurrentPosMarker setMarkerTextLocal format ["Commander - %1", name player];
     };
+
+};
