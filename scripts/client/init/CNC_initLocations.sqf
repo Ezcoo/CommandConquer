@@ -1,6 +1,3 @@
-
-call CNC_fnc_cfgLocations;
-
 {
     _location = _x select 2;
 
