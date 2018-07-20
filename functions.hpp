@@ -7,6 +7,9 @@ class CfgFunctions
 			class updateMhqPosOnMap {};
 			class updateCommPosOnMap {};
 			class createCommVoteDialog {};
+			class cfgLocations {};
+			class runForCommPlayer {};
+			class voteAsComm {};
 		};
 	};
 };

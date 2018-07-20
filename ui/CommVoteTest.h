@@ -1,5 +1,3 @@
-//Exported via Arma Dialog Creator (https://github.com/kayler-renslow/arma-dialog-creator)
-
 #include "CustomControlClasses.h"
 class CommVoteTest
 {
@@ -48,7 +46,7 @@ class CommVoteTest
 		class Applicants
 		{
 			type = 5;
-			idc = -1;
+			idc = 124;
 			x = safeZoneX + safeZoneW * 0.3671875;
 			y = safeZoneY + safeZoneH * 0.29861112;
 			w = safeZoneW * 0.265625;
@@ -76,64 +74,122 @@ class CommVoteTest
 		};
 		class RunForComm
 		{
-			type = 1;
+			type = 16;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.37695313;
-			y = safeZoneY + safeZoneH * 0.73611112;
-			w = safeZoneW * 0.11914063;
-			h = safeZoneH * 0.03819445;
-			style = 0+2;
+			x = safeZoneX + safeZoneW * 0.37239584;
+			y = safeZoneY + safeZoneH * 0.73703704;
+			w = safeZoneW * 0.109375;
+			h = safeZoneH * 0.02777778;
+			style = 2;
 			text = "Run for commander";
-			borderSize = 0;
+			animTextureDefault = "#(argb,8,8,3)color(1,1,1,1)";
+			animTextureDisabled = "#(argb,8,8,3)color(0.2,0.2,0.2,1)";
+			animTextureFocused = "#(argb,8,8,3)color(1,1,1,1)";
+			animTextureNormal = "#(argb,8,8,3)color(1,1,1,1)";
+			animTextureOver = "#(argb,8,8,3)color(1,1,1,1)";
+			animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
+			color[] = {1,1,1,1};
+			color2[] = {1,0.702,0.4,1};
 			colorBackground[] = {0.6,0,0,1};
-			colorBackgroundActive[] = {1,0,0,1};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
-			colorBorder[] = {0,0,0,0};
+			colorBackground2[] = {0.102,0.102,0.102,1};
+			colorBackgroundFocused[] = {0,0,0,1};
 			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorFocused[] = {0.2,0.2,0.2,1};
-			colorShadow[] = {0,0,0,1};
-			colorText[] = {1,1,1,1};
+			colorFocused[] = {1,0.7131,0,1};
 			font = "PuristaMedium";
-			offsetPressedX = 0.01;
-			offsetPressedY = 0.01;
-			offsetX = 0.01;
-			offsetY = 0.01;
+			size = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
-			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
-			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
-			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			soundClick[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundPush",0.09,1.0};
+			textureNoShortcut = "";
+			onButtonClick = "[player] call CNC_fnc_runForCommPlayer;";
+			shadow = 0;
+			shortcuts[] = {};
+			tooltipColorBox[] = {0,0,0,1};
+			tooltipColorText[] = {1,1,1,1};
+			class HitZone
+			{
+				top = 0;
+				right = 0;
+				bottom = 0;
+				left = 0;
+				
+			};
+			class ShortcutPos
+			{
+				top = 0;
+				left = 0;
+				w = 0;
+				h = 0;
+				
+			};
+			class TextPos
+			{
+				top = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2;
+				right = 0.005;
+				bottom = 0;
+				left = 0.25 * (((safezoneW / safezoneH) min 1.2) / 40);
+				
+			};
 			
 		};
 		class VoteAsComm
 		{
-			type = 1;
+			type = 16;
 			idc = -1;
-			x = safeZoneX + safeZoneW * 0.50390625;
-			y = safeZoneY + safeZoneH * 0.73611112;
-			w = safeZoneW * 0.11914063;
-			h = safeZoneH * 0.03819445;
-			style = 0+2;
+			x = safeZoneX + safeZoneW * 0.51074219;
+			y = safeZoneY + safeZoneH * 0.73958334;
+			w = safeZoneW * 0.11523438;
+			h = safeZoneH * 0.02430556;
+			style = 0;
 			text = "Vote as commander";
-			borderSize = 0;
-			colorBackground[] = {0.702,0.702,0.102,1};
-			colorBackgroundActive[] = {1,0.902,0.502,1};
-			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
-			colorBorder[] = {0,0,0,0};
+			animTextureDefault = "#(argb,8,8,3)color(1,1,1,1)";
+			animTextureDisabled = "#(argb,8,8,3)color(0.2,0.2,0.2,1)";
+			animTextureFocused = "#(argb,8,8,3)color(1,1,1,1)";
+			animTextureNormal = "#(argb,8,8,3)color(1,1,1,1)";
+			animTextureOver = "#(argb,8,8,3)color(1,1,1,1)";
+			animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
+			color[] = {1,1,1,1};
+			color2[] = {1,0.902,0.6,1};
+			colorBackground[] = {0.102,0.302,0.102,1};
+			colorBackground2[] = {0.102,0.102,0.102,1};
+			colorBackgroundFocused[] = {0,0,0,1};
 			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorFocused[] = {0.2,0.2,0.2,1};
-			colorShadow[] = {0,0,0,1};
-			colorText[] = {1,1,1,1};
+			colorFocused[] = {1,0.7131,0,1};
 			font = "PuristaMedium";
-			offsetPressedX = 0.01;
-			offsetPressedY = 0.01;
-			offsetX = 0.01;
-			offsetY = 0.01;
+			size = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
-			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
-			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
-			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			soundClick[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundPush",0.09,1.0};
+			textureNoShortcut = "";
+			onButtonClick = "[lbCurSel 124] call CNC_fnc_voteAsComm";
+			class HitZone
+			{
+				top = 0;
+				right = 0;
+				bottom = 0;
+				left = 0;
+				
+			};
+			class ShortcutPos
+			{
+				top = 0;
+				left = 0;
+				w = 0;
+				h = 0;
+				
+			};
+			class TextPos
+			{
+				top = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2;
+				right = 0.005;
+				bottom = 0;
+				left = 0.25 * (((safezoneW / safezoneH) min 1.2) / 40);
+				
+			};
 			
 		};
 		
