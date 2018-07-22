@@ -166,7 +166,7 @@ class CommVoteTest
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundPush",0.09,1.0};
 			textureNoShortcut = "";
-			onButtonClick = "[lbCurSel 124] call CNC_FNC_VoteAsComm;";
+			onButtonClick = "[lbCurSel 124] call CNC_fnc_voteAsComm;";
 			class HitZone
 			{
 				top = 0;

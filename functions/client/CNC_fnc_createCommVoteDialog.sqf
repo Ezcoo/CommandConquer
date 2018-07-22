@@ -12,7 +12,7 @@ if (!isServer && hasInterface) then {
 
     CNC_var_commVoteOngoing = true;
 
-    if (isNil CNC_arr_commVotePlayerList) then {
+    if (isNil "CNC_arr_commVotePlayerList") then {
         CNC_arr_commVotePlayerList = [[0, "No commander", "0", 0]];
     };
 

@@ -4,7 +4,7 @@ CNC_FNC_VoteAsComm = {
 // of the array are listed in order
 params ["_lbCurrentSelectionIndex"];
 
-if (isNil "_lbCurrentSelectionIndex") then {
+if (isNil "_lbCurrentSelectionIndex" || _lbCurrentSelectionIndex == -1) then {
     _lbCurrentSelectionIndex = 0;
 };
 
