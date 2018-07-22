@@ -1,8 +1,12 @@
 // COMPILE FUNCTIONS FOR LATER USE (OPTIMIZATION)
 
 _arrFunctionsServer = [
-"functions\server\CNC_initCommVote.sqf",
-"functions\server\CNC_registerCommVote.sqf"
+"cfg\CNC_cfg_initVarsServer.sqf",
+"functions\server\CNC_fnc_initCommVote.sqf",
+"functions\server\CNC_fnc_registerCommVote.sqf",
+"functions\server\CNC_fnc_pvCommVoteList.sqf",
+"functions\server\CNC_fnc_onPlayerConnected.sqf",
+"functions\server\CNC_fnc_onPlayerDisconnected.sqf"
 ];
 
 // NOTE: Content of _arrFunctionsCommon should be the same for client and server
@@ -23,6 +27,7 @@ _arrFunctionsCommon = [
 // RUN SCRIPTS
 
 _arrScriptsServer = [
+"scripts\server\CNC_monitorAllPlayers.sqf"
 ];
 
 _arrScriptsCommon = [

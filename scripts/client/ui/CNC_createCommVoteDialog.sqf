@@ -4,9 +4,9 @@
 	returns: nothing
 */
 
-sleep 10;
+sleep 25;
 
-call CNC_fnc_createCommVoteDialog;
+call CNC_FNC_InitCommVoteClient;
 
 
 

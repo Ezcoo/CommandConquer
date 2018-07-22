@@ -1,5 +1,7 @@
 _arrFunctionsClient = [
-"functions\client\init\initPVEH.sqf",
+// Init both client and common vars (need to have priority as other scripts use the vars)
+"cfg\CNC_cfg_initVarsClient.sqf",
+"functions\client\init\CNC_fnc_initCommVoteClient.sqf",
 "functions\client\CNC_fnc_createCommVoteDialog.sqf",
 "functions\client\CNC_fnc_updateCommPosOnMap.sqf",
 "functions\client\CNC_fnc_updateMhqPosOnMap.sqf",
@@ -35,16 +37,15 @@ if (!hasInterface) then {
 // RUN SCRIPTS
 
 _arrScriptsClient = [
-"cfg\client\CNC_cfg_clientVars.sqf",
 "scripts\client\CNC_updateMhqPosOnMap.sqf",
 "scripts\client\CNC_updateCommPosOnMap.sqf",
+"scripts\client\init\CNC_initLocations.sqf",
 "scripts\client\ui\CNC_createCommVoteDialog.sqf",
-"scripts\client\init\CNC_initLocations.sqf"
+"scripts\client\init\CNC_initPVEH.sqf"
 ];
 
+
 _arrScriptsCommon = [
-"cfg\common\CNC_cfg_commonVars.sqf",
-"cfg\common\CNC_cfg_locations.sqf"
 ];
 
 {

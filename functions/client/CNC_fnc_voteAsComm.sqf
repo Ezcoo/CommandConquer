@@ -4,8 +4,16 @@ CNC_FNC_VoteAsComm = {
 // of the array are listed in order
 params ["_lbCurrentSelectionIndex"];
 
-[CNC_var_oldCommVoteIndex, _lbCurrentSelectionIndex] remoteExecCall ["CNC_FNC_RegisterCommVote", 2];
+if (isNil "_lbCurrentSelectionIndex") then {
+    _lbCurrentSelectionIndex = 0;
+};
 
-CNC_var_oldCommVoteIndex = _lbCurrentSelectionIndex;
+["DEBUG", format ["CNC_FNC_VoteAsComm: Current _lbCurSel client UID: %1", CNC_arr_commVotePlayerList select _lbCurrentSelectionIndex select 2], 1] call CNC_FNC_LogContent;
+
+[CNC_var_oldCommVoteUID, CNC_arr_commVotePlayerList select _lbCurrentSelectionIndex select 2] remoteExecCall ["CNC_FNC_RegisterCommVote", 2];
+
+["DEBUG", format ["CNC_FNC_VoteAsComm: CNC_FNC_RegisterCommVote was called with old UID: %1 and new UID: %2", CNC_var_oldCommVoteUID, CNC_arr_commVotePlayerList select _lbCurrentSelectionIndex select 2], 1] call CNC_FNC_LogContent;
+
+CNC_var_oldCommVoteUID = CNC_arr_commVotePlayerList select _lbCurrentSelectionIndex select 2;
 
 };

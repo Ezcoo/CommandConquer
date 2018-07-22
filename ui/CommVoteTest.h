@@ -1,3 +1,5 @@
+//Exported via Arma Dialog Creator (https://github.com/kayler-renslow/arma-dialog-creator)
+
 #include "CustomControlClasses.h"
 class CommVoteTest
 {
@@ -105,7 +107,6 @@ class CommVoteTest
 			textureNoShortcut = "";
 			onButtonClick = "[player] call CNC_fnc_runForCommPlayer;";
 			shadow = 0;
-			shortcuts[] = {};
 			tooltipColorBox[] = {0,0,0,1};
 			tooltipColorText[] = {1,1,1,1};
 			class HitZone
@@ -165,7 +166,7 @@ class CommVoteTest
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButtonMenu\soundPush",0.09,1.0};
 			textureNoShortcut = "";
-			onButtonClick = "[lbCurSel 124] call CNC_fnc_voteAsComm";
+			onButtonClick = "[lbCurSel 124] call CNC_FNC_VoteAsComm;";
 			class HitZone
 			{
 				top = 0;
